@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pigin Post</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styling.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="popup-wrapper">
+    <div class="popup" id="popup-wallet">
+      <h1>Please upload a wallet</h1><br/>
+      <div class="content">
+        <input type="file" id="walletUploadInput"/>
+        <p id="balance">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <div class="popup-wrapper" style="display: none;">
+    <div class="popup" id="popup-display">
+      <div class="paper">
+        hi!
+      </div>
+    </div>
+  </div>
+  <div id="twojs-canvas" style="width: 100%; height:100vh;"></div>
+  <div style="display: none;">
+    <input id="tag"/>
+    <textarea id="message"></textarea>
+    <button id="submit">Submit</button>
+    <button id="get">Get</button>
+  </div>
+  <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+  <script src="js/vendor/two.min.js" ></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/graphics/graphicssetup.js"></script>
+  <script src="js/graphics/smallbird.js"></script>
+  <script src="js/graphics/flock.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/arweave-pigins.js"></script>
+</body>
+
+</html>
